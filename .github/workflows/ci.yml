@@ -27,6 +27,7 @@ jobs:
         java-version: '11'
 
     - name: Build with Maven
+      working-directory: ./my-app
       run: mvn clean install
 
     - name: Run application and test
