@@ -31,5 +31,6 @@ jobs:
       run: mvn clean install
 
     - name: Run application and test
+      working-directory: ./my-app
       run: |
         java -jar target/cloud-customer-usage-1.0-SNAPSHOT.jar
